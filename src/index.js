@@ -1,15 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, hashHistory, IndexRoute } from "react-router";
-import App from './App.js';
-import AuthTest from './containers/AuthTest'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import Home from './containers/Home'
 
 const router = (
-  <Router history={hashHistory}>
-    <Route path="/" component={AuthTest}>
-      <IndexRoute component={App} />
-      <Route path="/authtest" component={AuthTest} />
-    </Route>
+  <Router>
+    <div>
+      <Route exact path="/" component={Home}/>
+    </div>
   </Router>
 )
 
