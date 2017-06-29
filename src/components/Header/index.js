@@ -1,5 +1,8 @@
 import React from 'react'
 
+import Avatar from 'material-ui/Avatar'
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
+
 import { Grid, Row, Col } from 'react-flexbox-grid'
 
 import CSSModules from 'react-css-modules';
@@ -11,27 +14,28 @@ class Header extends React.Component {
   // }
 
   render() {
+
     return (
-      <Grid fluid styleName="header">
-        <Row>
-          <Col xs={3} md={3}>
-            Logo
-          </Col>
-          <Col xs={6} md={6}>
-            Content
-          </Col>
-          <Col xs={3} md={3}>
-            <Row>
-              <Col xs={6} md={6}>
-                Login
-              </Col>
-              <Col xs={6} md={6}>
-                Sign Up
-              </Col>
-            </Row>
-          </Col>
-        </Row>
-      </Grid>
+      <MuiThemeProvider>
+        <Grid fluid styleName="header">
+          <Row>
+            <Col xs={6}>
+              <Avatar
+                src="https://goo.gl/tUwC9L"
+                size={50}
+                styleName="header__logo"
+              />
+            </Col>
+            <Col xs={6}>
+              <Avatar
+                src="https://goo.gl/n6nrq6"
+                size={50}
+                styleName="header__avatar"
+              />
+            </Col>
+          </Row>
+        </Grid>
+      </MuiThemeProvider>
     );
   }
 }

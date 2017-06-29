@@ -1,4 +1,17 @@
+
 .header {
-  background-color: rgba(88, 214, 44, 0.6);
+  position: relative;
   height: 100px;
+
+  &__logo{
+    position: absolute;
+    left: 10%;
+    top: 15px;
+  }
+
+  &__avatar{
+    position: absolute;
+    right: 10%;
+    top: 15px;
+  }
 }
