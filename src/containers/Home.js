@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Header from '../components/Header'
-import Login from '../components/LoginForm'
+import Form from '../components/Form'
 import Footer from '../components/Footer'
 
 export default class Home extends React.Component {
@@ -9,7 +9,7 @@ export default class Home extends React.Component {
     return (
       <div>
         <Header />
-        <Login />
+        <Form />
         <Footer />
       </div>
     );
