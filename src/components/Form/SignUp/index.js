@@ -68,15 +68,6 @@ class SignUp extends React.Component {
             />
           </Col>
         </Row>
-        <Row center="xs">
-          <Col xs={12}>
-            <RaisedButton
-              label="Sign Up"
-              primary={true}
-              onClick={this.signup}
-            />
-          </Col>
-        </Row>
       </div>
     );
   }

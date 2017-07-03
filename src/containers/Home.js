@@ -9,8 +9,8 @@ export default class Home extends React.Component {
     return (
       <div>
         <Header />
-        <Form />
-        <Footer />
+        {/* <Form /> */}
+        {/* <Footer /> */}
       </div>
     );
   }
